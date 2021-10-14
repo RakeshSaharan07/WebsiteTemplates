@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.navigation{
+    margin-top: 5px;
+   
+    /* height: 74px; */
+    /* background-color: red; */
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left{
+    display: flex;
+    font-family: var(--font3);
+}
+.nav-left span{
+    font-size: 35px;
+    /* padding-top: 2px; */
+    font-weight: bolder;
+}
+.nav-left ul{
+    display: flex;
+    align-items: center;
+    margin: 0 77px;
+    font-size: 21px;
+    /* font-weight: 8px; */
+}
+
+.nav-left ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+.nav-left ul li a{
+    text-decoration: none;
+    color: black;
+}
+.nav-left ul li a:hover{
+    font-weight: bolder;
+    color: var(--main-bg-color);
+
+}
+
+.nav-right{
+
+}
+
+
+
+.content{
+    padding: 9px;
+    margin-top: 32px;
+    height: 100%;
+    /* background-color: rgb(167, 167, 245); */
+    display: flex;
+    position: relative;
+}
+
+.content::after{
+    content: "";
+    position:absolute;
+    background-image: url(../img/backg.png);
+    width: 100%;
+    height: inherit;
+    opacity: 0.2;
+    border-radius: 12px;
+}
+
+.content-left{
+    font-family: var(--font1);
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    z-index: 1;
+}
+.content-right{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-right img{
+    height: 280px;
+    border: 2px solid black;
+    border-radius: 200px;
+}
+
+.home-articles{
+    /* height: 455px; */
+    margin-top: 23px;
+    padding: 18px;
+    background-color: rgb(233, 222, 225, 0.4);
+    position: relative;
+}
+
+.year-box{
+    position: absolute;
+    width: 200px;
+    height: 238px;
+    top: 88px;
+    right: 0px;
+    font-size: 18px;
+    font-family: var(--font2);
+    /* background-color: brown; */
+}
+
+.year-box div{
+    margin: 12px 0px;
+}
+
+.home-article{
+    display: flex;
+    margin: 25px;
+}
+
+.home-article img{
+    width: 220px;
+    height: 150px;
+}
+
+.home-article-content{
+    align-self: center;
+    padding: 25px; 
+}
+
+.home-article-content a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.footer{
+    height: 50px;
+    background-color: rgb(56, 49, 49);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
